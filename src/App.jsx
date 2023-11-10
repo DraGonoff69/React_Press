@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react'; // Remove the unused import of Component
-// import NavBar from './components/NavBar';
+// import NavBar from './components/Navbar';
 // import News from './components/News';
 import {
   BrowserRouter as Router,
