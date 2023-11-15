@@ -1,3 +1,13 @@
+const express = require('express');
+const User = require('../models/User');
+const router = express.Router();
+const { body, validationResult } = require('express-validator');
+const bcrypt = require('bcryptjs');
+var jwt = require('jsonwebtoken');
+const JWT_SECRET = 'AyushAyushAyushok';
+var fetchuser=require('../middleware/fetchuser')
+
+
 router.post('/createuser', [
     body('name', 'Name should be at least 3 letters').isLength({ min: 3 }),
     body('email', 'Enter email').isEmail(),
