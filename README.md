@@ -18,7 +18,7 @@ With a commitment to reliability, we prioritize reputable news sources, deliveri
 
 | <img src="src\assets\1.png"  width=400 height=400> Home Page   | <img src="src\assets\2.png" width=400 height=400> **Login Page**    |
 | ------------------------------------------------------------------- | -------------------------------------------------------------- |
-| <div ><img src="src\assets\3.png" alt="complaint" width=400 height=400 style="display:inline-block"> **SignUp Page**|</div>
+| <img src="src\assets\3.png" alt="complaint" width=400 height=400 style="display:inline-block"> **SignUp Page**|
 
 ## Languages, Frameworks, Tools used
 
@@ -26,6 +26,7 @@ With a commitment to reliability, we prioritize reputable news sources, deliveri
 - Vite + ReactJS
 - MongoDB Atlas as database
 - Bootstarp CSS and Vanila CSS for styling
+- Nodejs and ExpressJs for backend    
 
 ## Developing
 
