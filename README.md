@@ -13,6 +13,7 @@ With a commitment to reliability, we prioritize reputable news sources, deliveri
 - Intuitive User Interface
 - Real-time Updates
 - Reliable Sources
+- Responsive Design
 
 ## Screenshots
 
