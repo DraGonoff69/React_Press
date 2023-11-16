@@ -9,7 +9,7 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch(`${host}/api/auth/login`, {
+    const response = await fetch(${host}/api/auth/login, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -58,7 +58,7 @@ const Login = () => {
                         <div className="d-flex align-items-center mb-3 pb-1">
 
                           <span className="h1 fw-bold mb-0">Login</span>
-                          <img src="/vite.svg"
+                          <img src="public\vite.svg"
                             alt="login form" className="img-fluid" style={{ borderRadius: '1rem 0 0 1rem' }} />
                         </div>
 
@@ -71,7 +71,6 @@ const Login = () => {
                             className="form-control form-control-lg"
                             value={credentials.email}
                             onChange={handleChange}
-                            name='email'
                           />
                           <label className="form-label" htmlFor="form2Example17">Email address</label>
                         </div>
@@ -83,7 +82,6 @@ const Login = () => {
                             className="form-control form-control-lg"
                             value={credentials.password}
                             onChange={handleChange}
-                            name='password'
                           />
                           <label className="form-label" htmlFor="form2Example27">Password</label>
                         </div>
