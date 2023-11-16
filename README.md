@@ -49,4 +49,4 @@ This is the group project done for the Software Enginnering Course at our instit
 
 Akhil Chandra and Ajay contribute in the frontend part of the website.
 Chintlapudi Sushmanth and Anshul Katiyar contributed in the backend part fo the website.
-Ayush Mishra contributed both in fronten and backend part of the website.
+Ayush Mishra contributed both in frontend and backend part of the website.
