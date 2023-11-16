@@ -19,7 +19,7 @@ With a commitment to reliability, we prioritize reputable news sources, deliveri
 
 | <img src="src\assets\1.png"  width=400 height=400> Home Page   | <img src="src\assets\2.png" width=400 height=400> **Login Page**    |
 | ------------------------------------------------------------------- | -------------------------------------------------------------- |
-| <img src="src\assets\3.png" alt="complaint" width=400 height=400 style="display:inline-block"> **SignUp Page**|
+| <div ><img src="src\assets\3.png" alt="complaint" width=400 height=400 style="display:inline-block"> **SignUp**|<img src="src\assets\4.png" alt="dashboard" width=400 height=400 style="display:inline-block"> **Performance** |</div>
 
 ## Languages, Frameworks, Tools used
 
