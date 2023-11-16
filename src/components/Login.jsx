@@ -58,7 +58,7 @@ const Login = () => {
                         <div className="d-flex align-items-center mb-3 pb-1">
 
                           <span className="h1 fw-bold mb-0">Login</span>
-                          <img src="public\vite.svg"
+                          <img src="/vite.svg"
                             alt="login form" className="img-fluid" style={{ borderRadius: '1rem 0 0 1rem' }} />
                         </div>
 
