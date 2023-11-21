@@ -6,33 +6,45 @@ const Login = () => {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
   const host = "http://localhost:5000";
   const navigate = useNavigate();
-
+  const [showAlert, setShowAlert] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // const response = await fetch(${host}/api/auth/login, {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify({ email: credentials.email, password: credentials.password }),
-    // });
+    const response = await fetch(`${host}/api/auth/login`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email: credentials.email, password: credentials.password }),
+    });
     const json = await response.json();
     console.log(json);
     if (json.success) {
       // Save the token and redirect
       localStorage.setItem('token', json.authtoken);
-      navigate("/");
+      setShowAlert(true); // Show the alert on successful login
+      setTimeout(() => {
+        setShowAlert(false); // Hide the alert after a certain time (if desired)
+        navigate("/General");
+      }, 3000); // Adjust as needed
     } else {
       alert("Invalid credentials");
+
     }
   };
 
   const handleChange = (e) => {
     setCredentials({
       ...credentials,
-      [e.target.id]: e.target.value,
+      password: e.target.value
     });
   };
+  const HandleChange = (e) => {
+    setCredentials({
+      ...credentials,
+      email: e.target.value
+    });
+  };
+
 
   return (
     <div className='container'>
@@ -70,7 +82,9 @@ const Login = () => {
                             id="form2Example17"
                             className="form-control form-control-lg"
                             value={credentials.email}
-                            onChange={handleChange}
+                            style={{ padding: '25px' }}
+                            onChange={HandleChange}
+                            name='email'
                           />
                           <label className="form-label" htmlFor="form2Example17">Email address</label>
                         </div>
@@ -81,7 +95,9 @@ const Login = () => {
                             id="form2Example27"
                             className="form-control form-control-lg"
                             value={credentials.password}
+                            style={{ padding: '25px' }}
                             onChange={handleChange}
+                            name='password'
                           />
                           <label className="form-label" htmlFor="form2Example27">Password</label>
                         </div>
